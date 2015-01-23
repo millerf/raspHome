@@ -1,0 +1,25 @@
+
+
+# Webiopi installation
+
+# Python modules
+
+-APS installation
+cd python
+tar -xvzf APScheduler-3.0.0.tar.gz
+sudo python3 setup.py install
+
+-SQL Alchemy installation
+sudo apt-get install python3-sqlalchemy
+
+
+# Configuration
+copy cfg/webiopi_config to /etc/webiopi/config
+set password with "sudo webiopi-passwd"
+edit cfg/cfg.json "XXXXX" parameters
+[optional]
+create app folders in html/app
+edit html/index.html
+create RRDs with scripts/rrdcreate.py
+
+

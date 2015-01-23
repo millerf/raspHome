@@ -1,0 +1,216 @@
+{
+    "location":[
+        {
+            "country":"XXXXX",
+            "city":"XXXXX",
+            "lat":"XXXXX",
+            "lon":"XXXXX"
+        }
+    ],
+    "WU_API_key":"XXXXX",
+    "sensors":{
+        "DHT22": 11,
+        "tmp0": "XXXXX",
+        "tmp_pool": "XXXXX"
+    },
+    "app" : {
+        "ventilation": {
+            "title": "- Ventilation -",
+            "duration": 3600,
+            "map": [
+                {
+                    "name": "Grande Vitesse",
+                    "cmd": [
+                        {
+                            "id": "On",
+                            "label": "ON",
+                            "gpio": 7
+                        }
+                    ]
+                }
+            ],
+            "progs": [
+                {
+                    "name":"fan",
+                    "label":"auto"
+                }
+            ],
+            "ranks": 1,
+            "parameters":[
+                {
+                    "id": "p1",
+                    "label": "Min (%HR)",
+                    "min": 0
+                },
+                {
+                    "id": "p2",
+                    "label": "Max (%HR)",
+                    "min": 50
+                }
+            ]
+        },
+        "pump": {
+            "title": "- Pompes -",
+            "duration": 3600,
+            "map": [
+                {
+                    "name":"Relevage Piscine",
+                    "cmd": [
+                        {
+                            "id": "On",
+                            "label": "ON", 
+                            "gpio": 17
+                        }
+                    ]
+                }
+            ],
+            "progs":[
+                {
+                    "name":"freq",
+                    "label":"/"
+                }
+            ],
+            "ranks": 1,
+            "parameters":[
+                {
+                    "id": "p1",
+                    "label": "Frequence (h)",
+                    "min": 1
+                },
+                {
+                    "id": "p2",
+                    "label": "Duree (min)",
+                    "min": 1
+                }
+            ]
+        },
+        "pool": {
+            "title": "- Piscine -",
+            "duration": 1800,
+            "map": [
+                {
+                    "name":"Filtration",
+                    "cmd": [
+                        {
+                            "id": "On",
+                            "label": "ON", 
+                            "gpio": 18
+                        }
+                    ]
+                }
+            ],
+            "progs":[
+                {
+                    "name":"pool",
+                    "label":"auto"
+                }
+            ],
+            "ranks": 1
+        },
+        "volets": {
+            "title": "- Volets -",
+            "duration": 30,
+            "master": [
+                {
+                    "name": "TOUS",
+                    "cmd": [
+                        {
+                            "id": "Up",
+                            "label": "/\\"
+                        },
+                        {
+                            "id": "Dn",
+                            "label": "\\/"
+                        }
+                    ]
+                }
+            ],
+            "map": [
+                {
+                    "name": "Salon",
+                    "cmd": [
+                        {
+                            "id": "Up",
+                            "label": "/\\",
+                            "gpio":27
+                        },
+                        {
+                            "id": "Dn",
+                            "label": "\\/",
+                            "gpio":22
+                        }
+                    ]
+                },
+                {
+                    "name": "Chambre",
+                    "cmd": [
+                        {
+                            "id": "Up",
+                            "label": "/\\",
+                            "gpio":23
+                        },
+                        {
+                            "id": "Dn",
+                            "label": "\\/",
+                            "gpio":24
+                        }
+                    ]
+                },
+                {
+                    "name": "Cuisine",
+                    "cmd": [
+                        {
+                            "id": "Up",
+                            "label": "/\\",
+                            "gpio":10
+                        },
+                        {
+                            "id": "Dn",
+                            "label": "\\/",
+                            "gpio":9
+                        }
+                    ]
+                },
+                {
+                    "name": "Terrasse",
+                    "cmd": [
+                        {
+                            "id": "Up",
+                            "label": "/\\",
+                            "gpio":25
+                        },
+                        {
+                            "id": "Dn",
+                            "label": "\\/",
+                            "gpio":8
+                        }
+                    ]
+                }
+            ],
+            "progs":[
+                {
+                    "name":"cron",
+                    "label":"~"
+                },
+                {
+                    "name":"sun",
+                    "label":"*"
+                }
+            ],
+            "ranks": 2,
+            "days":["L", "M", "M", "J", "V", "S", "D"],
+            "parameters":[
+                {
+                    "id": "p1",
+                    "label": "H",
+                    "min": 0
+                },
+                {
+                    "id": "p2",
+                    "label": "min",
+                    "min": 0
+                }
+            ]
+        }
+    }
+}

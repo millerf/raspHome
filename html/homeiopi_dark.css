@@ -1,0 +1,342 @@
+@CHARSET "UTF-8";
+
+body {
+background-color:#333333;
+/*font-family: Impact, Charcoal, sans-serif;*/
+/*font-family: Tahoma, Geneva, sans-serif;*/
+font-family: georgia,sans-serif;
+color:#666666;
+margin:0;
+padding:0;
+}
+
+h1 {
+        display: block;
+        font-size: 28pt;
+        font-weight: bold;
+        line-height: 80px;
+        text-align: center;
+        height: 80px;
+        margin: 0 auto;
+        width: auto;
+        position: relative;
+        background-color: transparent;
+        color: WhiteSmoke;
+}
+
+
+h2 {
+        display: block;
+        font-size: 20pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+    	margin: 10px 0 auto;
+        height: auto;
+        width: auto;
+        color: Beige;
+}       
+
+
+p {
+        display: block;
+        font-size: 12pt;
+        color: black;
+        width: auto;
+        height: auto;
+	    margin: 0 auto;
+        text-align: center;
+        vertical-align: middle;
+}       
+
+
+a:link {
+	    color: DimGray;
+	    font-weight: normal;
+	    text-decoration: none;
+}
+
+a:visited {
+        color: DimGray;
+    	font-weight: normal;
+        text-decoration: none;
+}
+
+a:hover {
+	    color: Silver;
+	    font-weight: bold;
+}
+
+
+button {
+        display: table-cell;
+        font-size: 24pt;
+        font-weight: bold;
+	    font-family: Impact, Charcoal, sans-serif;
+        color: black;
+        height: auto;
+        text-align: center;
+        vertical-align: middle;
+        transition: all 0.3s ease 0s;
+	    border: 2px solid transparent;
+        background-color: DimGray; 
+}
+
+button:hover {
+        background-color: Gray; 
+}
+
+
+.Default {
+	    background-color: DimGray;
+}
+
+.Default:active {
+	    background-color: Silver;
+}
+
+
+.LOW {
+        display: table-cell;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: auto;
+        width: 60px;
+        margin: 10px;
+        /*position: relative;*/
+    	background-color: DimGray;
+}
+
+.HIGH {
+        display: table-cell;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: auto;
+        width: 60px;
+        margin: 10px;
+    	background-color: Beige;
+	    color: Orange;
+}
+
+
+.HIGH:hover {
+        background-color: LightGray;
+}
+
+
+
+.title {
+        display: block;
+        font-size: 28pt;
+        font-weight: bold;
+	    vertical-align: middle;
+        text-align: center; 
+        line-height: 80px;
+	    /*margin: 0 auto;*/
+        width: auto;
+        position: relative;
+        background-color: transparent;
+        color: WhiteSmoke;
+}
+
+
+.main {
+    	display: table-cell;
+	    font-size: 20pt;
+    	font-weight: bold;
+	    vertical-align: middle;
+    	text-align: center;
+	    height: auto;
+    	width: 120px;
+	    color: Beige;
+}
+
+
+.time {
+        display: inline-block;
+	    font-size: 14pt;
+    	font-weight: bold;
+	    vertical-align: middle;
+        line-height: 25px;
+        position: absolute;
+        top: 0;
+        left: 0;
+	    height: auto;
+    	width: auto;
+        margin-left: 10px;
+}
+
+
+.desc {
+    	display: table-cell;
+	    font-size: 20pt;
+    	font-weight: bold;
+	    vertical-align: middle;
+    	text-align: center;
+	    height: auto;
+        margin: 10px;
+    	width: 120px;
+	    color: Beige;
+}
+
+
+.graph {
+        display: block;
+        margin: 5em auto;
+}
+
+
+.progOff {
+        display: inline-block;
+        font-size: 20pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: inherit;
+        width: 50px;
+        margin: 4px;
+}
+
+
+.progOn {
+        display: inline-block;
+        font-size: 20pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: inherit;
+        width: 50px;
+        margin: 4px;
+        color: Orange;
+}
+
+.progDanger {
+        display: inline-block;
+        font-size: 20pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: auto;
+        width: 50px;
+        margin: 4px;
+}
+
+.progDanger:hover {
+        background-color: FireBrick;
+}
+
+.progVal {
+        display: table-cell;
+        font-size: 10pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: auto;
+        width: 30px;
+        /*color: Beige;*/
+        background-color: DimGray;
+}
+
+.progError {
+        display: table-cell;
+        font-size: 10pt;
+        font-weight: bold;
+        vertical-align: middle;
+        text-align: center;
+        height: auto;
+        width: 30px;
+        background-color: Red;
+}
+
+
+.progDay {
+    display: inline-block;
+    position: relative;
+    border:solid 1px #c0c0c0;
+    overflow:auto;
+    width: 20px;
+    margin: 20px auto;
+}
+ 
+.progDay label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background-color: Orange;
+    color: Orange;
+}
+
+.progDay label:active {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background-color: Orange;
+    color: Orange;
+}
+
+
+
+.box {
+        display: table;
+        height: 100px;
+        margin: 10px auto;
+        width: auto;
+        position: relative;
+        background-color: #444444;
+}
+
+.boxBtn {
+        display: table;
+        height: auto;
+        width: auto;
+        border-spacing: 20px 0px;
+        margin: 10px;
+        background-color: #333333;
+}
+
+
+.boxProg {
+        display: table-cell;
+        height: 50%;
+        width: auto;
+        background-color: #333333;
+}
+
+.progBtn {
+        display: inline-block;
+        /*margin: 10px;*/
+}
+
+.paramBtn {
+        display: inline-block;
+        /*margin: 2px;*/
+}
+
+.dayBtn {
+        display: block;
+        /*margin: 2px;*/
+}
+
+/*
+.dayBtn label{
+    color: Orange;
+    }
+*/
+
+
+[disabled] {
+    color: Orange;
+    }
+
+
+label {
+    font-size: 12pt;
+    /*color: Orange;
+    background-color: Black;*/
+    }
+
+input {
+        margin-left: 10px;
+}
